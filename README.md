@@ -1,6 +1,11 @@
 # Correlation Analysis of Network Monitoring Data
 
 Made by the Laboratory of Computer Networks and Security of Universidade Estadual do Ceará (LARCES/UECE).
+
+*Note: The files (codes and datasets) are in the 'develop' branch.*
+
+*Direct link:* https://github.com/LarcesUece/Correlation-Analysis-of-Network-Monitoring-Data/tree/develop
+
 ## Proposal summary
 
 Currently, several companies and Internet Service Providers (ISPs) offer network monitoring services that encompass regular performance assessments, with the main focus on delivering crucial information about the current state of the network infrastructure and consequently the services running on it. However, these monitoring tools require continuous development to incorporate more complex tasks, such as performance issue detection. Within this context, this article introduces a mechanism for identifying high latencies and network communication links that may be the cause of these performance issues, utilizing an Impact Score formulated considering temporal aspects. This Score is based on data correlation techniques applied to information collected by monitoring tools. Experiments conducted with real data from RNP demonstrate the effectiveness of the proposed mechanism in identifying network links that impact data communication, resulting in high end-to-end latencies.
@@ -18,10 +23,11 @@ The proposed mechanism for identifying causes of delays in network infrastructur
 
 ### Project Coordinator:
 
-- Rafael Lopes [Curriculum Lattes](http://lattes.cnpq.br/5212299313885086)
+- Rafael Lopes Gomes [Curriculum Lattes](http://lattes.cnpq.br/5212299313885086)
 
 ### Members:
 
+- Thelmo Pontes de Araujo [Curriculum Lattes](http://lattes.cnpq.br/3978299887398475)
 - Francisco Valderlan Jorge Nobre [Curriculum Lattes](http://lattes.cnpq.br/8242344331454843)
 - Danielle dos Santos Silva [Curriculum Lattes](https://lattes.cnpq.br/5639924024679664)
 - Maria Clara Mesquita Moura Ferreira [Curriculum Lattes](http://lattes.cnpq.br/3456660001349261)
