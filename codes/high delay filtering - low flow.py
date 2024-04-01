@@ -6,11 +6,14 @@ import pandas as pd
 -First step to generate the other datasets
 -In comments are the command lines to be used to generate for leak"""
 
-# local_file = "./datasets vazao/bbr/"
-# directory_out = "./datasets alterados/filtragem de desempenho/desempenho vazao baixa total 6 meses/bbr/"
+# local_file = "./datasets vazao/bbr/"  # datasets throughput
+# local_file = "./datasets vazao/cubic/" # datasets throughput
+# directory_out = "./datasets alterados/filtragem de desempenho/desempenho vazao baixa total 6 meses/bbr/" # select low throughput bbr
+# directory_out = "./datasets alterados/filtragem de desempenho/desempenho vazao baixa total 6 meses/cubic/" # select low throughput cubic
 local_file = "./datasets atraso/"
 # directory_out = "./datasets alterados/filtragem de desempenho/desempenho atraso alto total 6 meses/"
 directory_out = "./datasets alterados/filtragem de desempenho/desempenho atraso baixo total 6 meses/"
+
 if not os.path.exists(directory_out):
     os.makedirs(directory_out)
 

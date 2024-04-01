@@ -162,6 +162,7 @@ def select_traceroute(file1, file2, saida):
         lista_arq_vazios.append(file1)
 
 
+
 def select_delay_day(
     entry_directory, exit_directory, nome_ant, nome_nov, dia, mes, ano
 ):
@@ -225,29 +226,25 @@ if __name__ == "__main__":
     ano = 2023
 
     hora = 7
-    minutos = [
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23,
-        24,
-    ]
+    minutos = [12, 13, 14, 15, 16, 17, 18]
+    
+    # entry_directory = "./datasets alterados/filtragem de desempenho/desempenho atraso alto total 6 meses/"
+    # exit_directory = "./datasets alterados/filtragem de desempenho/alto/_resultado atraso alto dia " + str(dia) +" "+ str(mes) +" "+ str(ano)+"/"
+    entry_directory = "./datasets alterados/filtragem de desempenho/desempenho atraso baixo total 6 meses/"
+    exit_directory = (
+        "./datasets alterados/filtragem de desempenho/baixo/_resultado atraso baixo dia "
+        + str(dia)
+        + " "
+        + str(mes)
+        + " "
+        + str(ano)
+        + "/"
+    )
+    nome_ant = "desempenho atraso"
+    nome_nov = "atraso alto do dia"
+
+    select_delay_day(entry_directory, exit_directory, nome_ant, nome_nov, dia, mes, ano)
+    print("Processing completed.")
 
     """ Seleciona o atraso pela hora e minuto """
     for minuto in minutos:
