@@ -8,14 +8,14 @@
 
 - In the "processed datasets" folder are the data generated after filtering and processing the data contained in the "datasets" folder.
 
-- The "correlation" folder ...
+- The "correlation" folder contains the codes developed to handle the matrices created after data collection. There are also folders for good and bad results, which represent high (considered bad) and low (considered good) delay.
 
 # Basic execution guide
 
-## Collecting data
+## Data collection to initial data processing.
 ### First step:
 - Begin by running the code named 'data_collector.py' in the 'codes' folder.
-- 
+  
 *Note: Due to instabilities, data collection may stop, requiring a restart from where it left off. To resume, simply edit within the loop at the end of the code, updating the last number displayed on the screen.*
 
 ### Second step:
@@ -29,5 +29,7 @@ With the collected data, you should perform filtering to separate high latency o
   
 *Note: You should edit the comments in the code to choose whether you want to filter by latency.*
 
-### Fourth step:
+## Correlation
+
+### First step:
 - 
