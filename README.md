@@ -32,4 +32,14 @@ With the collected data, you should perform filtering to separate high latency o
 ## Correlation
 
 ### First step:
-- 
+- First you'll need to enter the "correlation" directory and then enter the "Codes" subdirectory. Finally, start by filling the 'datasets' subdirectory with the desired .csv datasets. 
+
+*Note: We used the datasets in the 'processed datasets' directory for the tests and two of them will be used as an exemple following the next steps.*
+
+### Second step:
+- You'll need to run 'pip3 install -r requirements.txt' to make sure all the necessary python packages are installed in your environment.
+
+### Third step:
+- Give the correlation script 'correlation_script.sh' permission in your environment by running 'chmod +x correlation_script.sh' and then run the script using './correlation_script.sh'. It will give you feedback as the code is creating the new directorys with Correlation Matrices, Heatmaps and Graphics for the Performance Score.
+
+*Note: The code will only work if the "Codes/datasets" subdirectory is filled with datasets with the same base name as the ones used in example and in the "processed datasets" directory.*
